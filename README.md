@@ -1,5 +1,7 @@
 # PASCO_Gyroscope_with_PINN
-From the data obtained during the experiment originally from PASCO's gyroscope experiment, I have used classification(supervised learning) and PINN for trajectory prediction. For detail, please refer to the README file
+From the data obtained during the experiment originally from PASCO's gyroscope experiment, I have used classification(supervised learning) and PINN for trajectory prediction.
+The GIF below is the result of a model predicting nutation based on both numerical analysis and Lab data.
+![lr_d_p_ 001_1 best](https://github.com/user-attachments/assets/5c0e7b5b-536b-4d0c-83bc-0bfeb2d93ec6)
 
 # Machine Learning within this repository
 As in the description, I've used supervised learning as the following method to find the value of the momentent of the inertia of the gyroscope with respect to the pivot: I' (This can be hardly found through experiments.) since we have the formula that can generate the trajectory of the gyroscope with respect to time, we can make various trajectories with different I' values that can be used as the training data of our classification model. 
@@ -10,4 +12,4 @@ Note that the motion of equation implemented in this file uses Euler's method, w
 Hence there is space for improvement using other methods when solving the given differential equation. (For example, Runge Futta 4'th method)
 -> Actually this might be the reason of the differnece between our numerical plot and the experimental data. (I'll leave it out untill I get some time)  
 
-![lr_d_p_ 001_1 best](https://github.com/user-attachments/assets/5c0e7b5b-536b-4d0c-83bc-0bfeb2d93ec6)
+
